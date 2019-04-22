@@ -1,5 +1,5 @@
 mode = "debug"
-address = ":8080"
+address = ":3306"
 sessionsecret = "alvaro_carvajal_castro"
 [database]
 username = "dbo618511085"
