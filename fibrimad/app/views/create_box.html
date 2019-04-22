@@ -1,0 +1,78 @@
+{{ template "header.html" }} {{ template "navbar.html" . }}
+<div class="header">
+    <div class="container-fluid">
+        Creación de una nueva obra
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <nav class="col-md-2 d-none d-md-block sidebar">
+            {{ template "sidebar.html" . }}
+        </nav>
+        <main class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+            {{ if .error }}
+            <div class="alert alert-danger" role="alert">
+                <b>Error</b> - {{ .error }}
+            </div>
+            {{ end }}
+            <form method="post" class="needs-validation" novalidate>
+                <input type="hidden" name="csrf_token" value="{{ .token }}" required>
+                <div class="form-group">
+                    <label for="code">Código</label>
+                    <input type="text" {{ if .form }} value="{{ .form.Code }}" {{ end }} name="code" class="form-control" id="code" placeholder="Código de la caja"
+                        required>
+                    <div class="invalid-feedback">
+                        Porfavor, inserta un código de la caja válido
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="state">Fotos</label>
+                    <div class="form-group">
+                        <button id="add-pic" class="btn btn-primary">Añadir foto</button>
+                    </div>
+                    <small id="pic-list-help-text" class="form-text text-muted">
+                        Lista de las fotos de la caja. Se pueden añadir más usando el botón "Añadir foto"
+                    </small>
+                    <table id="pic-list" class="table table-striped table-bordered data-table" width="100%" cellspacing="0">
+                        <thead class="thead-dark">
+                            <th>Nombre</th>
+                            <th>Acción</th>
+                        </thead>
+                        <tbody id="pic-list-items">
+                            {{ if not .form }}
+                            <tr id="pic-item-0">
+                                <td>
+                                    <input name="photos[]" id="pic-0" type="text" class="form-control" value="" placeholder="Nombre de la foto">
+                                </td>
+                                <td>
+                                    <button data-id="0" id="pic-remove-0" class="btn btn-danger btn-sm pic-remove">Eliminar</button>
+                                </td>
+                            </tr>
+                            {{ else }}
+                                {{ range $index, $element := .form.Photos }}
+                                <tr id="pic-item-{{ $index }}">
+                                    <td>
+                                        <input name="photos[]" id="pic-{{ $index }}" type="text" class="form-control" value="" placeholder="Nombre de la foto">
+                                    </td>
+                                    <td>
+                                        <button data-id="{{ $index }}" id="pic-remove-{{ $index }}" class="btn btn-danger btn-sm pic-remove">Eliminar</button>
+                                    </td>
+                                </tr>
+                                {{ end }}
+                            {{ end }}
+                        </tbody>
+                    </table>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <input type="submit" id="btn-login" class="btn btn-custom btn-lg btn-block" value="Crear">
+                    </div>
+                    <div class="col-6">
+                        <a type="submit" href="/admin/work/view/{{ .workOrder.ID }}" class="btn btn-danger btn-lg btn-block">Volver</a>
+                    </div>
+                </div>
+            </form>
+        </main>
+    </div>
+</div>
+{{ template "footer.html" }}

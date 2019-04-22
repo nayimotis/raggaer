@@ -1,0 +1,148 @@
+#login {
+    padding-top: 50px;
+}
+
+#login h1 {
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.pt-3, .py-3 {
+    padding-top: 0rem !important;
+}
+
+.header {
+    width: 100%;
+    background-color: #e3f2fd;
+    padding: 20px 0px 20px 15px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.role-detail {
+    padding: 20px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    border: 1px solid #e3f2fd;
+    border-radius: .3rem;
+    list-style: none;
+}
+
+.role-detail .detail {
+    background-color: #e3f2fd;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.role-detail li + li {
+    margin-top: 15px;
+}
+
+.full-width label {
+    width: 100%;
+}
+
+.dataTables_info {
+    font-size: 13px;
+}
+
+.dataTables_wrapper.container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.sidebar-sticky ul li {
+    background-color: #e3f2fd;
+    font-weight: bold;
+}
+
+.sidebar-sticky ul li + li {
+    margin-top: 17px;
+}
+
+@media screen and (max-width: 1000px) {
+    .no-show-mobile {
+        display: none;
+    }
+    .table-bordered {
+        border: 0px;
+    }
+    table {
+      border: 0;
+    }
+    table caption {
+      font-size: 1.3em;
+    }
+    table thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+    table tr {
+      border-bottom: 3px solid #ddd;
+      display: block;
+      margin-bottom: .625em;
+    }
+    table td {
+      border-bottom: 1px solid #ddd;
+      display: block;
+      font-size: .8em;
+      text-align: right;
+    }
+    table td a.btn {
+        display: block;
+    }
+    table td a.btn + a.btn {
+        margin-top: 10px;
+    }
+    table td:before {
+      /*
+      * aria-label has no advantage, it won't be read inside a table
+      content: attr(aria-label);
+      */
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    table td:last-child {
+      border-bottom: 0;
+    }
+  }
+
+.log-panel + .log-panel {
+    margin-top: 18px;
+}
+
+.header-controls {
+    margin-top: 15px;
+}
+
+ul.nav-item {
+    background-color: #e3f2fd;
+    list-style: none;
+    margin-bottom: 17px;
+}
+
+.log-entry {
+    margin-bottom: 1px;
+}
+
+#pic-list-help-text {
+    margin-bottom: 15px;
+}
+
+.up.no {
+    color: #721c24;
+}
+
+.up.ok {
+    color: #155724;
+}

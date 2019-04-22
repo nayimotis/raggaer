@@ -1,0 +1,35 @@
+mode = "debug"
+address = ":8080"
+sessionsecret = "alvaro_carvajal_castro"
+[database]
+username = "root"
+password = "admin"
+database = "fibrimad"
+[roles]
+Administrador = [
+    "login",
+    "create_user",
+    "user_list",
+    "edit_user",
+    "view_user",
+    "remove_user",
+    "delete_user",
+    "create_work_order",
+    "work_order_list",
+    "edit_work_order",
+    "delete_work_order",
+    "upload_file_work_order",
+    "view_work_order",
+    "view_file",
+    "delete_file",
+    "edit_file",
+    "create_box",
+    "view_box",
+    "edit_box",
+    "delete_box",
+    "view_file_box",
+    "upload_file_box"
+]
+Usuario = [
+    "login"
+]

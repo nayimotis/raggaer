@@ -1,0 +1,36 @@
+{{ template "header.html" }}
+<section id="login">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="form-wrap">
+                    {{ if .error }}
+                    <div class="alert alert-danger" role="alert">
+                        <b>Error</b> - {{ .error }}
+                    </div>
+                    {{ end }}
+                    <h1>Iniciar sesión en tu cuenta</h1>
+                    <form class="needs-validation" role="form" method="post" id="login-form" autocomplete="off" novalidate>
+                        <input type="hidden" name="csrf_token" value="{{ .token }}" required>
+                        <div class="form-group">
+                            <label for="username" class="sr-only">Usuario</label>
+                            <input autocomplete="false" type="text" name="username" id="username" class="form-control" placeholder="Usuario" required>
+                            <div class="invalid-feedback">
+                                Porfavor, inserta un nombre de usuario
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="sr-only">Password</label>
+                            <input autocomplete="false" type="password" name="password" id="password" class="form-control" placeholder="Contraseña" required>
+                            <div class="invalid-feedback">
+                                Porfavor, inserta tu contraseña
+                            </div>
+                        </div>
+                        <input type="submit" id="btn-login" class="btn btn-custom btn-lg btn-block" value="Iniciar sesión">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ template "footer.html" }}

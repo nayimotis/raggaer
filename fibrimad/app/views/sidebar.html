@@ -1,0 +1,41 @@
+<div class="sidebar-sticky">
+    <ul class="nav flex-column">
+        <li class="nav-item">
+            <a class="nav-link active" href="/">
+                <i class="icon ion-navicon-round"></i> Inicio
+            </a>
+        </li>
+        {{ if .roleList.UserList }}
+        <li class="nav-item">
+            <a class="nav-link active" href="/admin/user/list">
+                <i class="icon ion-person"></i> Usuarios
+            </a>
+        </li>
+        <ul class="nav-item">
+            {{ if .roleList.CreateUser }}
+            <li class="nav-item">
+                <a class="nav-link active" href="/admin/user/create">
+                    <i class="icon ion-plus-round"></i> Crear
+                </a>
+            </li>
+            {{ end }}
+        </ul>
+        {{ end }}
+        {{ if .roleList.WorkList }}
+        <li class="nav-item">
+            <a class="nav-link active" href="/admin/work/list">
+                <i class="icon ion-wrench"></i> Obras
+            </a>
+        </li>
+        <ul class="nav-item">
+                {{ if .roleList.CreateWork }}
+                <li class="nav-item">
+                    <a class="nav-link active" href="/admin/work/create">
+                        <i class="icon ion-plus-round"></i> Crear
+                    </a>
+                </li>
+                {{ end }}
+            </ul>
+        {{ end }}
+    </ul>
+</div>

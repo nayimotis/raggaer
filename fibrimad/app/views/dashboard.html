@@ -1,0 +1,105 @@
+{{ template "header.html" }} {{ template "navbar.html" . }}
+<div class="header">
+    <div class="container-fluid">
+        Panel de control
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <nav class="col-md-2 d-none d-md-block sidebar">
+            {{ template "sidebar.html" . }}
+        </nav>
+        <main class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+            {{ if .error }}
+            <div class="alert alert-danger" role="alert">
+                <b>Error</b> - {{ .error }}
+            </div>
+            {{ end }}
+            <div class="row">
+                {{ if .user_list }}
+                <div class="col-12">
+                    <div class="card bg-light mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Usuarios
+                            </h5>
+                            <p class="card-text">
+                                Administra los usuarios de la plataforma (lista, editar, eliminar y crear)
+                            </p>
+                            <a href="/admin/user/list" class="btn btn-primary btn-sm">
+                        Lista de usuarios
+                    </a>
+                        </div>
+                    </div>
+                </div>
+                {{ end }} {{ if .create_user }}
+                <div class="col-12">
+                    <div class="card bg-light mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Crear usuario
+                            </h5>
+                            <p class="card-text">
+                                Crea un nuevo usuario
+                            </p>
+                            <a href="/admin/user/create" class="btn btn-primary btn-sm">
+                        Crear usuario
+                    </a>
+                        </div>
+                    </div>
+                </div>
+                {{ end }} {{ if .work_order_list }}
+                <div class="col-12">
+                    <div class="card bg-light mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Obras
+                            </h5>
+                            <p class="card-text">
+                                Administra toas las obras de la plataforma (lista, editar, eliminar y crear)
+                            </p>
+                            <a href="/admin/work/list" class="btn btn-primary btn-sm">
+                        Lista de obras
+                    </a>
+                        </div>
+                    </div>
+                </div>
+                {{ end }} {{ if .create_user }}
+                <div class="col-12">
+                    <div class="card bg-light mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Crear obra
+                            </h5>
+                            <p class="card-text">
+                                Crea una nueva obra
+                            </p>
+                            <a href="/admin/work/create" class="btn btn-primary btn-sm">
+                        Crear obra
+                    </a>
+                        </div>
+                    </div>
+                </div>
+                {{ end }}
+                {{ range $index, $element := .workOrders }}
+                <div class="col-12">
+                    <div class="card bg-light mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Obra {{ $element.Code }}
+                            </h5>
+                            <p class="card-text">
+                                {{ $element.Description }}
+                            </p>
+                            <a href="/admin/work/view/{{ $element.ID }}" class="btn btn-primary btn-sm">
+                                Visualizar obra
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+        </main>
+    </div>
+</div>
+{{ template "footer.html" }}
