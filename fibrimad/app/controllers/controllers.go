@@ -3,12 +3,12 @@ package controllers
 import (
 	"database/sql"
 
-	"github.com/raggaer/fibrimad/app/role"
+	"github.com/nayimotis/raggaer/fibrimad/app/role"
 
 	"github.com/gin-contrib/sessions"
 	"github.com/gin-gonic/gin"
-	"github.com/raggaer/fibrimad/app/config"
-	"github.com/raggaer/fibrimad/app/models"
+	"github.com/nayimotis/raggaer/fibrimad/app/config"
+	"github.com/nayimotis/raggaer/fibrimad/app/models"
 )
 
 type roleListSidebar struct {
