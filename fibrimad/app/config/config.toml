@@ -1,10 +1,10 @@
 mode = "debug"
-address = ":8080"
-sessionsecret = "alvaro_carvajal_castro"
+address = ":3306"
+sessionsecret = "nayim"
 [database]
-username = "root"
-password = "admin"
-database = "fibrimad"
+username = "dbo618511085"
+password = "fibrimad"
+database = "db618511085.db.1and1.com"
 [roles]
 Administrador = [
     "login",
