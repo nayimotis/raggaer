@@ -1,4 +1,4 @@
-package controllers
+﻿package controllers
 
 import (
 	"net/http"
@@ -7,10 +7,10 @@ import (
 
 	"golang.org/x/crypto/bcrypt"
 
+	"github.com/nayimotis/raggaer/fibrimad/app/models"
 	"github.com/gin-contrib/sessions"
 	"github.com/gin-gonic/gin"
 	"github.com/justinas/nosurf"
-	"github.com/nayimotis/raggaer/fibrimad/app/models"
 )
 
 // LoginForm shows the login form

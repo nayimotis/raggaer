@@ -1,6 +1,6 @@
 mode = "debug"
-address = ":3306"
-sessionsecret = "nayim"
+address = ":8080"
+sessionsecret = "alvaro_carvajal_castro"
 [database]
 username = "dbo618511085"
 password = "fibrimad"
@@ -33,3 +33,4 @@ Administrador = [
 Usuario = [
     "login"
 ]
+

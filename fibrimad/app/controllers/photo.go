@@ -1,4 +1,4 @@
-package controllers
+﻿package controllers
 
 import (
 	"io/ioutil"
@@ -7,11 +7,11 @@ import (
 	"path/filepath"
 	"strconv"
 
-	"github.com/gin-contrib/sessions"
 	"github.com/nayimotis/raggaer/fibrimad/app/role"
+	"github.com/gin-contrib/sessions"
 
-	"github.com/gin-gonic/gin"
 	"github.com/nayimotis/raggaer/fibrimad/app/models"
+	"github.com/gin-gonic/gin"
 
 	_ "image/gif"
 	_ "image/jpeg"

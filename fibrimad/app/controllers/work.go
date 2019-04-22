@@ -1,4 +1,4 @@
-package controllers
+﻿package controllers
 
 import (
 	"io"
@@ -8,11 +8,11 @@ import (
 	"strconv"
 	"time"
 
+	"github.com/nayimotis/raggaer/fibrimad/app/models"
+	"github.com/nayimotis/raggaer/fibrimad/app/role"
 	"github.com/gin-contrib/sessions"
 	"github.com/gin-gonic/gin"
 	"github.com/justinas/nosurf"
-	"github.com/nayimotis/raggaer/fibrimad/app/models"
-	"github.com/nayimotis/raggaer/fibrimad/app/role"
 )
 
 // CreateWorkForm defines a create work order

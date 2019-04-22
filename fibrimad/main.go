@@ -7,12 +7,12 @@ import (
 	"net/http"
 	"path/filepath"
 
-	"github.com/gin-contrib/sessions"
-	"github.com/gin-gonic/gin"
-	"github.com/justinas/nosurf"
 	"github.com/nayimotis/raggaer/fibrimad/app/config"
 	"github.com/nayimotis/raggaer/fibrimad/app/controllers"
 	"github.com/nayimotis/raggaer/fibrimad/app/models"
+	"github.com/gin-contrib/sessions"
+	"github.com/gin-gonic/gin"
+	"github.com/justinas/nosurf"
 )
 
 func main() {

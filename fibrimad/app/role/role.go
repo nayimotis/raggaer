@@ -1,4 +1,4 @@
-package role
+﻿package role
 
 import (
 	"github.com/nayimotis/raggaer/fibrimad/app/config"

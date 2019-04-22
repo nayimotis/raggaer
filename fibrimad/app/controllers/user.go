@@ -1,4 +1,4 @@
-package controllers
+﻿package controllers
 
 import (
 	"net/http"
@@ -6,10 +6,10 @@ import (
 
 	"github.com/nayimotis/raggaer/fibrimad/app/role"
 
+	"github.com/nayimotis/raggaer/fibrimad/app/models"
 	"github.com/gin-contrib/sessions"
 	"github.com/gin-gonic/gin"
 	"github.com/justinas/nosurf"
-	"github.com/nayimotis/raggaer/fibrimad/app/models"
 	"golang.org/x/crypto/bcrypt"
 )
 

@@ -5,10 +5,10 @@ import (
 
 	"github.com/nayimotis/raggaer/fibrimad/app/role"
 
-	"github.com/gin-contrib/sessions"
-	"github.com/gin-gonic/gin"
 	"github.com/nayimotis/raggaer/fibrimad/app/config"
 	"github.com/nayimotis/raggaer/fibrimad/app/models"
+	"github.com/gin-contrib/sessions"
+	"github.com/gin-gonic/gin"
 )
 
 type roleListSidebar struct {
