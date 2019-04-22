@@ -2,7 +2,7 @@ package main
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/raggaer/fibrimad/app/controllers"
+	"github.com/nayimotis/raggaer/fibrimad/app/controllers"
 )
 
 func setRoutes(router *gin.Engine) {

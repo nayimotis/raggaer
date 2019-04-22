@@ -5,7 +5,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/raggaer/fibrimad/app/role"
+	"github.com/nayimotis/raggaer/fibrimad/app/role"
 )
 
 func setTemplateFuncMap() template.FuncMap {

@@ -8,10 +8,10 @@ import (
 	"strconv"
 
 	"github.com/gin-contrib/sessions"
-	"github.com/raggaer/fibrimad/app/role"
+	"github.com/nayimotis/raggaer/fibrimad/app/role"
 
 	"github.com/gin-gonic/gin"
-	"github.com/raggaer/fibrimad/app/models"
+	"github.com/nayimotis/raggaer/fibrimad/app/models"
 
 	_ "image/gif"
 	_ "image/jpeg"

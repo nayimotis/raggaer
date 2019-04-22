@@ -1,8 +1,8 @@
 package role
 
 import (
-	"github.com/raggaer/fibrimad/app/config"
-	"github.com/raggaer/fibrimad/app/models"
+	"github.com/nayimotis/raggaer/fibrimad/app/config"
+	"github.com/nayimotis/raggaer/fibrimad/app/models"
 )
 
 const (

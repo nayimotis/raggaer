@@ -10,9 +10,9 @@ import (
 	"github.com/gin-contrib/sessions"
 	"github.com/gin-gonic/gin"
 	"github.com/justinas/nosurf"
-	"github.com/raggaer/fibrimad/app/config"
-	"github.com/raggaer/fibrimad/app/controllers"
-	"github.com/raggaer/fibrimad/app/models"
+	"github.com/nayimotis/raggaer/fibrimad/app/config"
+	"github.com/nayimotis/raggaer/fibrimad/app/controllers"
+	"github.com/nayimotis/raggaer/fibrimad/app/models"
 )
 
 func main() {

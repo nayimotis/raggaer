@@ -11,8 +11,8 @@ import (
 	"github.com/gin-contrib/sessions"
 	"github.com/gin-gonic/gin"
 	"github.com/justinas/nosurf"
-	"github.com/raggaer/fibrimad/app/models"
-	"github.com/raggaer/fibrimad/app/role"
+	"github.com/nayimotis/raggaer/fibrimad/app/models"
+	"github.com/nayimotis/raggaer/fibrimad/app/role"
 )
 
 // CreateWorkForm defines a create work order

@@ -4,12 +4,12 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/raggaer/fibrimad/app/role"
+	"github.com/nayimotis/raggaer/fibrimad/app/role"
 
 	"github.com/gin-contrib/sessions"
 	"github.com/gin-gonic/gin"
 	"github.com/justinas/nosurf"
-	"github.com/raggaer/fibrimad/app/models"
+	"github.com/nayimotis/raggaer/fibrimad/app/models"
 	"golang.org/x/crypto/bcrypt"
 )
 

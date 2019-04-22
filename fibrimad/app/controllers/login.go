@@ -3,14 +3,14 @@ package controllers
 import (
 	"net/http"
 
-	"github.com/raggaer/fibrimad/app/role"
+	"github.com/nayimotis/raggaer/fibrimad/app/role"
 
 	"golang.org/x/crypto/bcrypt"
 
 	"github.com/gin-contrib/sessions"
 	"github.com/gin-gonic/gin"
 	"github.com/justinas/nosurf"
-	"github.com/raggaer/fibrimad/app/models"
+	"github.com/nayimotis/raggaer/fibrimad/app/models"
 )
 
 // LoginForm shows the login form
